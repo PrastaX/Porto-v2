@@ -1,0 +1,228 @@
+body {
+  width: 100vw;
+  height: 999999px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+  position: absolute;
+  top: 160px;
+  left: 5%;
+  z-index: -1;
+}
+
+.highlight {
+  color: #d54e4e;
+}
+
+/* Styling untuk nav */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background: #343a40;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+  z-index: 28;
+}
+
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  z-index: 30;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: #cd1515;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+  z-index: 29;
+}
+
+/* Width adjustments for nav items */
+nav a:nth-child(1) { width: 100px; }
+nav .start-home, a:nth-child(1):hover~.animation { width: 90px; left: 0px; }
+
+nav a:nth-child(2) { width: 110px; }
+nav a:nth-child(2):hover~.animation { width: 70px; left: 100px; }
+
+nav a:nth-child(3) { width: 100px; }
+nav a:nth-child(3):hover~.animation { width: 100px; left: 175px; }
+
+nav a:nth-child(4){
+
+	width: 150px;
+
+}
+nav a:nth-child(4):hover~.animation{
+	width: 100px;
+	left: 280px;
+}
+
+
+/* Styling untuk kontainer */
+.container {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.gambar {
+  border-radius: 50%;
+  position: absolute;
+  top: 190px;
+  max-width: 50vw;
+  width: 100%;
+  height: 100%;
+  max-height: 50vw;
+  object-fit: contain;
+  transform: translateX(100%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  z-index: -1;
+}
+
+.jir {
+  display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
+  flex-wrap: wrap; /* Memungkinkan gambar untuk dibungkus ke baris berikutnya */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 300px;
+  margin-top: 450px;
+}
+
+.hover-image {
+  z-index: 0;
+  flex: 1;
+  max-width: 100px;
+  margin: 5px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  border-radius: 15px;
+  
+}
+
+.hover-image:hover {
+  filter: grayscale(0%);
+  
+}
+
+.p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 175px;
+  margin-top: 10px;
+  width: 90%;
+  left: 5vw;
+  font-size: 14px;
+  z-index: -1;
+}
+
+.gatau {
+  display: flex;
+  justify-content: center;
+}
+
+
+.ii {
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  top: 475px;
+  z-index: -2;
+}
+
+#About {
+  position: absolute;
+  top: 900px;
+}
+
+.about {
+  position: absolute;
+  top: 960px;
+  border-bottom: 2px solid #b22020;
+  display: inline-block;
+  z-index: -1;
+}
+
+.Pras {
+  width: 160px;
+  height: 210px;
+  border-radius: 30px;
+  position: absolute;
+  top: 1020px;
+  z-index: -1;
+}
+
+.textPra {
+  text-align: center;
+}
+
+.Pra {
+  position: absolute;
+  top: 1250px;
+  z-index: -1;
+}
+
+#projek {
+  position: absolute;
+  top: 1600px;
+}
+.pro{
+  position: absolute;
+  top:1660px;
+  border-bottom: 2px solid #b22020;
+}
+
+.iconter {
+  display: flex;
+  align-items: center; /* Mengatur ikon agar sejajar secara horizontal */
+  gap: 50px; /* Jarak antar ikon */
+  margin-top: 1420px; /* Atur posisi top seluruh ikon */
+  position: absolute;
+}
+
+.iconter svg {
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+.iconter svg:hover {
+  transform: scale(1.3) translateY(-7px); /* Efek zoom dan naik ke atas */
+}
+
+
+.itcon {
+  display: flex;
+  justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+  align-items: flex-start; /* Mengatur posisi vertikal konten, bisa diubah menjadi center atau flex-end sesuai kebutuhan */
+  height: 500px; /* Mengatur tinggi kontainer sesuai viewport */
+}
+
+.card {
+  text-align: center; /* Menyelaraskan teks di dalam kartu ke tengah */
+  margin-top: 1700px; /* Atur margin atas sesuai keinginan */
+
+}
+}
